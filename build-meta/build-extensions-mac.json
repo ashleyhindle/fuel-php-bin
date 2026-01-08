@@ -1,0 +1,20 @@
+[
+    "bcmath",
+    "ctype",
+    "curl",
+    "dom",
+    "fileinfo",
+    "filter",
+    "iconv",
+    "mbstring",
+    "zlib",
+    "openssl",
+    "pcntl",
+    "phar",
+    "posix",
+    "simplexml",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlwriter"
+]
