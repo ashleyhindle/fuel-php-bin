@@ -65,14 +65,14 @@ jobs:
           curl -fsSL -o ${{ env.SPC_BINARY }}.tar.gz ${{ env.SPC_URL }}
           tar -xzf ${{ env.SPC_BINARY }}.tar.gz
           chmod +x ${{ env.SPC_BINARY }}
-          [ \! -d static-php-cli/bin ] && mkdir -p static-php-cli/bin
+          [ ! -d static-php-cli/bin ] && mkdir -p static-php-cli/bin
           mv ${{ env.SPC_BINARY }} static-php-cli/bin/
 
       - name: Create php-bin directory
         shell: bash
         run: |
           cd ..
-          [ \! -d php-bin ] && mkdir -p php-bin
+          [ ! -d php-bin ] && mkdir -p php-bin
           cd php-bin
 
       - shell: bash
@@ -127,7 +127,7 @@ jobs:
           key: spc-downloads-${{ env.PHP_EXT_HASH }}
 
       - name: Download PHP extension sources
-        if: steps.cache-spc-downloads.outputs.cache-hit \!= 'true'
+        if: steps.cache-spc-downloads.outputs.cache-hit != 'true'
         run: |
           cd ../static-php-cli
           ./bin/${{ env.SPC_BINARY }} download --with-php=${{ matrix.version }} --for-extensions "${{ env.PHP_EXTENSIONS }}" --prefer-pre-built --retry=3

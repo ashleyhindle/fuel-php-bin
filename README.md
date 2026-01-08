@@ -1,33 +1,47 @@
-# PHPacker binaries
+# Fuel PHP Binaries
 
-This is a fork of [NativePHP php-bin](https://github.com/NativePHP/php-bin) targeting the [micro SAPI](https://github.com/easysoft/phpmicro)
+Custom PHP binaries for [Fuel](https://github.com/ashleyhindle/fuel) - the AI agent task management CLI.
 
-## Installation
+This is a fork of [phpacker/php-bin](https://github.com/phpacker/php-bin) with a customized extension list including `pcntl` and `posix` for signal handling in TUI applications.
 
-You can install the package via Composer:
+## Extensions
 
-```shell
-composer require phpacker/php-bin
+Compiled extensions (see [php-extensions.txt](php-extensions.txt)):
+
+```
+bcmath, ctype, curl, dom, fileinfo, filter, iconv, mbstring, openssl,
+pcntl, phar, posix, simplexml, tokenizer, xml, xmlreader, xmlwriter, zlib
+```
+
+## Platforms
+
+- macOS arm64 (Apple Silicon)
+- macOS x64 (Intel)
+- Linux arm64
+- Linux x64
+
+## PHP Version
+
+Currently builds PHP 8.4 only.
+
+## Usage
+
+Used automatically by [Fuel](https://github.com/ashleyhindle/fuel) via phpacker:
+
+```bash
+phpacker build --repository="ashleyhindle/fuel-php-bin" ...
 ```
 
 ## Building
 
-PHPacker uses [`static-php-cli`](https://static-php.dev) to build minimal, statically-linked, self-contained PHP
-executables for each platform. This fork specifically outputs binaries targeting the micro SAPI.
-
-They are automatically built weekly to get the latest versions of PHP near enough as soon as they become available.
-
-[Check here](https://github.com/phpacker/php-bin/blob/main/php-extensions.txt) for the definitive list of
-extensions that are compiled in.
+Binaries are built using [static-php-cli](https://static-php.dev) via GitHub Actions. The workflow runs weekly or can be triggered manually.
 
 ## Credits
 
-- [Marcel Pociot](https://github.com/mpociot)
-- [Simon Hamp](https://github.com/simonhamp)
-- [Willem Leuverink](https://github.com/gwleuverink)
-- [All Contributors](../../contributors)
+- [phpacker/php-bin](https://github.com/phpacker/php-bin) - Original project
+- [NativePHP/php-bin](https://github.com/NativePHP/php-bin) - Upstream
+- [static-php-cli](https://github.com/crazywhalecc/static-php-cli) - Build tool
 
 ## License
 
-This repository is simply a redistribution of PHP. As such its use and further distribution is subject to the various
-license agreements found in [the licenses](license-files/)
+This repository is a redistribution of PHP. See [license-files/](license-files/) for applicable licenses.
