@@ -1,0 +1,11 @@
+[
+    "lib-base",
+    "micro",
+    "frankenphp",
+    "php",
+    "zlib",
+    "openssl",
+    "libiconv",
+    "libxml2",
+    "curl"
+]
