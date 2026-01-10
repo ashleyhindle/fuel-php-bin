@@ -5,8 +5,9 @@ permissions:
   pull-requests: write
 
 on:
-  schedule:
-    - cron: "0 0 * * 0"
+  push:
+    tags:
+      - '*.*.*'
   workflow_dispatch:
 
 env:
