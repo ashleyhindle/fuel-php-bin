@@ -1,8 +1,5 @@
 [
-    "bcmath",
     "ctype",
-    "curl",
-    "dom",
     "fileinfo",
     "filter",
     "iconv",
@@ -10,11 +7,10 @@
     "zlib",
     "openssl",
     "pcntl",
+    "pdo",
+    "sqlite3",
+    "pdo_sqlite",
     "phar",
     "posix",
-    "simplexml",
-    "tokenizer",
-    "xml",
-    "xmlreader",
-    "xmlwriter"
+    "tokenizer"
 ]
