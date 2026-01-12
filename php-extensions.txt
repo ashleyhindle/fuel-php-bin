@@ -1,1 +1,1 @@
-ctype,fileinfo,filter,iconv,mbstring,openssl,pcntl,pdo_sqlite,phar,posix,sqlite3,tokenizer,zlib
+ctype,fileinfo,filter,iconv,mbstring,openssl,pcntl,pdo,pdo_sqlite,phar,posix,sqlite3,tokenizer,zlib
