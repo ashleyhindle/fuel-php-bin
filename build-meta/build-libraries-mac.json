@@ -6,6 +6,7 @@
     "libxml2",
     "frankenphp",
     "php",
+    "onig",
     "openssl",
     "sqlite"
 ]
