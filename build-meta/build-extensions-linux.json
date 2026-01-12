@@ -4,6 +4,8 @@
     "fileinfo",
     "filter",
     "iconv",
+    "xml",
+    "libxml",
     "mbstring",
     "zlib",
     "openssl",
