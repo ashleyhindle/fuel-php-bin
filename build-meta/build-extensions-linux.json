@@ -1,5 +1,6 @@
 [
     "ctype",
+    "dom",
     "fileinfo",
     "filter",
     "iconv",

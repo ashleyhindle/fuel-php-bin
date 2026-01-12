@@ -5,6 +5,7 @@
     "php",
     "libiconv",
     "zlib",
+    "libxml2",
     "openssl",
     "sqlite"
 ]
