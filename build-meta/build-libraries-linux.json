@@ -6,6 +6,7 @@
     "libiconv",
     "zlib",
     "libxml2",
+    "onig",
     "openssl",
     "sqlite"
 ]
