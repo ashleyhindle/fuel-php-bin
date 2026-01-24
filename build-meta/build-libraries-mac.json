@@ -6,7 +6,8 @@
     "libxml2",
     "frankenphp",
     "php",
-    "onig",
     "openssl",
+    "curl",
+    "onig",
     "sqlite"
 ]

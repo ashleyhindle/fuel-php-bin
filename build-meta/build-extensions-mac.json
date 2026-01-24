@@ -1,5 +1,7 @@
 [
+    "bcmath",
     "ctype",
+    "curl",
     "dom",
     "fileinfo",
     "filter",
