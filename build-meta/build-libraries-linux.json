@@ -3,10 +3,11 @@
     "micro",
     "frankenphp",
     "php",
-    "libiconv",
     "zlib",
-    "libxml2",
-    "onig",
     "openssl",
+    "libiconv",
+    "libxml2",
+    "curl",
+    "onig",
     "sqlite"
 ]
